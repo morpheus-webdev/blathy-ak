@@ -6,7 +6,7 @@ export const TasksComp = (props: { tasks: ITask[] }) => {
 	return (
 		<div>
 			{tasks.map((t, i) => {
-				return <Task task={t} />;
+				return <Task key={`task-${i}`} task={t} />;
 			})}
 		</div>
 	);

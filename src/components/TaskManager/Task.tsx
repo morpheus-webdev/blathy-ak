@@ -1,5 +1,6 @@
 import { ITask } from '../../util/util';
 
+//Egy darab task tárolására/megjelenítésére alkalmas
 export const Task = ({ task }: { task: ITask }) => {
 	return (
 		<div>
