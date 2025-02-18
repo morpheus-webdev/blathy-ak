@@ -9,3 +9,4 @@ export const defaultTask: ITask = {
     duration: 0,
     isCompleted: false
 }
+

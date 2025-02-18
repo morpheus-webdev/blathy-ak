@@ -5,18 +5,10 @@ import { NewTaskComp } from './NewTaskComp';
 import { Route, Routes } from 'react-router-dom';
 
 const TaskManager = () => {
-	const [tasks, setTasks] = useState<ITask[]>([]);
-	function handleAdd(task: ITask) {
-		setTasks([...tasks, task]);
-	}
-	useEffect(() => {
-		console.log(tasks);
-	}, [tasks]);
-
 	return (
 		<Routes>
-			<Route path='/' element={<TasksComp tasks={tasks} />} />
-			<Route path='/newtask' element={<NewTaskComp add={handleAdd} />} />
+			<Route path='/' element={<TasksComp />} />
+			<Route path='/newtask' element={<NewTaskComp />} />
 		</Routes>
 	);
 };

@@ -1,9 +1,11 @@
 import { TextField } from '@mui/material';
 import { Button } from '@mui/material';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { defaultTask, ITask } from '../../util/util';
+import { UserContext } from '../../contexts/TaskContext';
 
-export const NewTaskComp = ({ add }: { add: (task: ITask) => void }) => {
+export const NewTaskComp = () => {
+	const { add } = useContext(UserContext);
 	const [newTask, setNewTask] = useState<ITask>(defaultTask);
 
 	function handleAdd() {
