@@ -25,3 +25,18 @@ export const defaultRegisteredUser: IRegisteredUser = {
     img: '',
     isPremiumUser: false
 }
+
+export const allUsers: IRegisteredUser[] = [//ilyet nem csinálunk a valóságban
+    {
+        username: 'pistike200',
+        password: 'kiskutya',
+        img: 'https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/Shadow-The-Hedgehog-Game-Art.jpg',
+        isPremiumUser: false
+    },
+    {
+        username: 'edgelord1000',
+        password: 'hellokitty',
+        img: 'https://news.harvard.edu/wp-content/uploads/2014/10/hello-kitty-wallpaper-37_605.jpg',
+        isPremiumUser: true
+    }
+]
